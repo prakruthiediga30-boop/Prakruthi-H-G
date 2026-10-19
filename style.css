@@ -1,0 +1,186 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, sans-serif;
+}
+
+body{
+  background:#fff5f8;
+  color:#333;
+  line-height:1.6;
+}
+
+/* Header */
+header{
+  background:#c2185b;
+  color:white;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 30px;
+  position:sticky;
+  top:0;
+  z-index:100;
+}
+header h1{
+  font-size:24px;
+}
+header nav a{
+  color:white;
+  text-decoration:none;
+  margin-left:18px;
+  font-weight:bold;
+  font-size:15px;
+}
+header nav a:hover{
+  color:#ffd1e6;
+  text-decoration:underline;
+}
+
+/* All Sections */
+section{
+  max-width:900px;
+  margin:20px auto;
+  padding:30px 20px;
+  background:white;
+  border-radius:12px;
+  box-shadow:0 2px 10px rgba(0,0,0,0.05);
+}
+section h2{
+  color:#c2185b;
+  margin-bottom:15px;
+  font-size:26px;
+  border-bottom:2px solid #f8bbd0;
+  display:inline-block;
+  padding-bottom:5px;
+}
+
+/* Home / Hero */
+#home{
+  text-align:center;
+  padding:50px 20px;
+}
+#home p{
+  font-size:16px;
+  color:#666;
+}
+#home h2{
+  font-size:36px;
+  color:#222;
+  border:none;
+  margin:10px 0;
+}
+#home h3{
+  color:#c2185b;
+  margin-bottom:10px;
+}
+#home a{
+  display:inline-block;
+  background:#c2185b;
+  color:white;
+  padding:10px 22px;
+  border-radius:20px;
+  text-decoration:none;
+  font-weight:bold;
+  margin-top:15px;
+}
+#home a:hover{
+  background:#880e4f;
+}
+
+/* About */
+#about p{
+  margin-bottom:10px;
+}
+
+/* Education */
+#education{
+  background:white;
+}
+.edu-box{
+  background:#fff5f8;
+  border-left:4px solid #c2185b;
+  padding:15px;
+  margin-bottom:12px;
+  border-radius:8px;
+}
+.edu-box h3{
+  font-size:18px;
+  color:#222;
+}
+.edu-box p{
+  color:#666;
+  font-size:14px;
+}
+
+/* Skills */
+#skills p{
+  background:#fce4ec;
+  padding:12px;
+  border-radius:8px;
+  font-weight:bold;
+  color:#880e4f;
+}
+
+/* Projects */
+#projects div{
+  background:#fff5f8;
+  padding:18px;
+  border-radius:10px;
+  margin-bottom:15px;
+  border:1px solid #f8bbd0;
+}
+#projects div h3{
+  color:#222;
+  margin-bottom:6px;
+}
+#projects div p{
+  font-size:14px;
+  color:#555;
+}
+
+/* Contact */
+#contact{
+  background:#880e4f;
+  color:white;
+  text-align:center;
+}
+#contact h2{
+  color:white;
+  border-color:white;
+}
+#contact p{
+  margin:5px 0;
+  font-size:15px;
+}
+
+/* Footer */
+footer{
+  text-align:center;
+  padding:20px;
+  color:#666;
+  font-size:14px;
+}
+
+/* Mobile Responsive */
+@media(max-width:600px){
+  header{
+    flex-direction:column;
+    text-align:center;
+  }
+  header nav{
+    margin-top:10px;
+  }
+  header nav a{
+    margin:0 8px;
+    font-size:14px;
+  }
+  #home h2{
+    font-size:28px;
+  }
+  section{
+    margin:10px;
+    padding:20px 15px;
+  }
+}
